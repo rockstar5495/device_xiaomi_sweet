@@ -3814,11 +3814,11 @@ case "$target" in
             setprop vendor.dcvs.prop 1
 
             # cpuset parameters
-            echo 0-2     > /dev/cpuset/background/cpus
-            echo 0-3     > /dev/cpuset/system-background/cpus
-            echo 4-7     > /dev/cpuset/foreground/boost/cpus
-            echo 0-2,4-7 > /dev/cpuset/foreground/cpus
-            echo 0-7     > /dev/cpuset/top-app/cpus
+            echo 4-5   > /dev/cpuset/background/cpus
+            echo 2-5   > /dev/cpuset/system-background/cpus
+            echo 0-5,7 > /dev/cpuset/foreground/cpus
+            echo 2-5   > /dev/cpuset/restricted/cpus
+            echo 0-7   > /dev/cpuset/top-app/cpus
 
             # Turn off scheduler boost at the end
             echo 0 > /proc/sys/kernel/sched_boost
