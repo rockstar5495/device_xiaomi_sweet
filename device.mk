@@ -423,3 +423,7 @@ $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 
 # Inherit MIUI Camera
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
+BOARD_PREBUILT_DTBOIMAGE := $(LOCAL_PATH)/prebuilt/dtbo.img
