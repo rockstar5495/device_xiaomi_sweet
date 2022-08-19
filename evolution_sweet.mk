@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Extras
-TARGET_BOOT_ANIMATION_RES : 1080p
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Product identifier to come after all inclsions
 PRODUCT_NAME := evolution_sweet
