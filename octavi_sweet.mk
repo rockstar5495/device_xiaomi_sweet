@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common OctaviOS stuff
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Product identifer to come after all inclusions
 PRODUCT_NAME := octavi_sweet
 PRODUCT_DEVICE := sweet
